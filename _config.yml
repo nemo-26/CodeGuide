@@ -7,3 +7,5 @@ include:       [".editorconfig", ".jscsrc", ".jshintrc", ".csslintrc", ".scss-li
 markdown:      rdiscount
 permalink:     pretty
 pygments:      true
+
+theme: jekyll-theme-cayman
