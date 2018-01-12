@@ -1,8 +1,14 @@
+// not goods
 var x = 1,
-    y = 1;
-
+  y = 1;
 if (x < y) {
-    x += 10;
+  x += 10;
+}
+// goods
+var x = 1,
+  y = 1;
+if (x < y) {
+  x += 10;
 } else {
-    x += 1;
+  x += 1;
 }

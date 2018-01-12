@@ -1,42 +1,38 @@
+// error (不要删除变量)
+var a = 10;
+delete a;
+
 // not good
 if (a == 1) {
-    a++;
+  a++;
 }
 
 // good
 if (a === 1) {
-    a++;
-}
-
-// good
-for (key in obj) {
-    if (obj.hasOwnProperty(key)) {
-        // be sure that obj[key] belongs to the object and was not inherited
-        console.log(obj[key]);
-    }
+  a++;
 }
 
 // not good
 Array.prototype.count = function(value) {
-    return 4;
+  return 4;
 };
 
 // not good
 var x = 1;
 
 function test() {
-    if (true) {
-        var x = 0;
-    }
+  if (true) {
+    var x = 0;
+  }
 
-    x += 1;
+  x += 1;
 }
 
 // not good
 function test() {
-    console.log(x);
+  console.log(x);
 
-    var x = 1;
+  var x = 1;
 }
 
 // not good
@@ -53,7 +49,7 @@ delete obj.attr;
 
 // not good
 if (a = 10) {
-    a++;
+  a++;
 }
 
 // not good
@@ -63,22 +59,9 @@ var a = [1, , , 2, 3];
 var nums = [];
 
 for (var i = 0; i < 10; i++) {
-    (function(i) {
-        nums[i] = function(j) {
-            return i + j;
-        };
-    }(i));
+  (function(i) {
+    nums[i] = function(j) {
+      return i + j;
+    };
+  }(i));
 }
-
-// not good
-var singleton = new function() {
-    var privateVar;
-
-    this.publicMethod = function() {
-        privateVar = 1;
-    };
-
-    this.publicMethod2 = function() {
-        privateVar = 2;
-    };
-};

@@ -1,8 +1,8 @@
 // not good
 if (condition)
-    doSomething();
+  doSomething();
 
 // good
 if (condition) {
-    doSomething();
+  doSomething();
 }
